@@ -630,7 +630,7 @@ export default function App() {
                       className="inline-flex items-center gap-1.5 text-xs font-mono font-extrabold uppercase tracking-wider border-2 border-black bg-white select-none px-4 py-2 text-stone-900 hover:bg-[#ff2a2a] hover:text-white rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer"
                     >
                       <FileText size={13} />
-                      <span>Request Resume</span>
+                      <span>Download Resume</span>
                     </a>
                     
                     <button
