@@ -23,6 +23,7 @@ import { projectsData, bioStory, photoReelData } from "./data";
 import { motion, AnimatePresence } from "motion/react";
 import TheatreCurtain, { playTheatricalSound } from "./components/TheatreCurtain";
 import { PROFILE_IMAGE } from "./imageAssets";
+import resumePdf from "./assets/resume/resume.pdf";
 
 const stickerPresets = [
   { emoji: "🥚", label: "Egg Hunter", color: "#fdba74" }, 
@@ -620,15 +621,12 @@ export default function App() {
                 {/* About CTA buttons */}
                 <div className="flex flex-col sm:flex-row items-center gap-4 justify-center bg-[#fef08a] border-2 border-black dark:border-white p-6 rounded-2xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] text-[#1c1917]" id="about-ctas">
                   <span className="font-display font-extrabold text-sm sm:text-base text-center sm:text-left text-neutral-900">
-                     Need to review my professional credentials & qualifications?
+                     Want to review my professional credentials & qualifications?
                   </span>
                   <div className="flex gap-2">
                     <a
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setIsContactOpen(true);
-                      }}
+                      href={resumePdf}
+                      download="resume.pdf"
                       className="inline-flex items-center gap-1.5 text-xs font-mono font-extrabold uppercase tracking-wider border-2 border-black bg-white select-none px-4 py-2 text-stone-900 hover:bg-[#ff2a2a] hover:text-white rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer"
                     >
                       <FileText size={13} />
